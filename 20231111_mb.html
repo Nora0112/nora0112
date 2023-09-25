@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Feebee</title>
+		<style>
+			body{
+				margin: 0 auto;
+                width: 100%;
+        		display: block;
+			}
+			.content img{
+				display: block;
+				width: 100%;
+				margin: 0 auto;
+			}
+			.navi img{
+		        position: fixed;
+		        z-index: 99;
+		        width: 100%;
+		        
+		        opacity: 1;
+		     }
+
+
+	
+			 
+
+		
+			 
+		</style>
+	</head>
+
+	<body>
+
+
+
+
+
+
+
+    
+
+
+
+ <div class="topparent">
+ 	<div class="top" id="top1" style="display: none;">
+
+	<a href="#">
+	<img src="images/20231111_mb_top.png" width="100%" alt="" style="
+    position: fixed;
+    z-index: 66;
+    bottom:35px;
+    right:0px;">
+	</a>
+
+
+</div>
+
+	<!-- <div class="topparent"><a href="#"><div class="top">
+	 	<img src="image/top.png"  alt=""></div></a>
+	 </div> -->
+	
+		<div class="navi" id="nav1" style="display: none;">
+   			<img src="images/20231111_navv_mb.png" alt="" usemap="#Map">
+	        	
+	   		
+   		</div>
+	
+		<div class="content">
+			<a>
+				<img src="images/20231111_mb.jpg" alt="">
+				
+				
+		</div>
+
+	</body>
+
+
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function(){
+			SetNavPos();
+			$(window).scroll(function(){
+				SetNavPos();
+			});
+
+			function SetNavPos() {
+				var pos = $(window).scrollTop();
+				if(pos > 250) {
+					$('#nav1').fadeIn();
+				}
+				else if(pos <= 250) {
+					$('#nav1').fadeOut();
+				}
+			}
+		});
+	</script>
+
+
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(function(){
+			SetNavPos();
+			$(window).scroll(function(){
+				SetNavPos();
+			});
+
+			function SetNavPos() {
+				var pos = $(window).scrollTop();
+				if(pos > 500) {
+					$('#top1').fadeIn();
+				}
+				else if(pos <= 600) {
+					$('#top1').fadeOut();
+				}
+			}
+		});
+	</script>
+
+
+
+
+
+
+
+
+
+
+</html>
